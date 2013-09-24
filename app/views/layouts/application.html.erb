@@ -21,53 +21,82 @@
   </head>
 
   <body>
-    
-     <div class="row">
-      <div class="large-12 columns">
-
-        <!-- Navigation -->
-
-          <ul class="button-group">
-            <li><a href="#" class="button">Nav Item 1</a></li>
-            <li><a href="#" class="button">Nav Item 2</a></li>
-            <li><a href="#" class="button">Nav Item 3</a></li>
-          </ul>
-
-        <!-- End Navigation -->
-
-
-        <%= yield  %>
-
-        <!-- Footer -->
-
-          <footer class="row">
-          <div class="large-12 columns"><hr />
-              <div class="row">
-
-                <div class="large-6 columns">
-                    <p>&copy; Copyright TecTV.cl</p>
-                </div>
-
-                <div class="large-6 columns">
-                    <ul class="inline-list right">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
-
-              </div>
-          </div>
-        </footer>
-
-        <!-- End Footer -->
-
-
-      </div>
-    </div>
-
-    
+      <div class="header header-home">
+		<div>
+			<ul>
+				<li class="selected">
+					<span><a href="/">Inicio</a></span>
+				</li>
+				<li>
+					<span><a href="/">Nosotros</a></span>
+				</li>
+				<li>
+					<span><a href="/">Contacto</a></span>
+				</li>
+                                <li>
+					<span><a href="/">Blog</a></span>
+				</li>
+				
+			</ul>
+			<div class="first">
+				<a href="/" id="logo"><%=image_tag 'Tectv.png', width: "450px" %></a>
+			</div>
+			<div>
+				<p>
+				¡Recuerda seguir nuestra señal online!	
+				</p>
+				<script type="text/javascript"> fid="TecTV.cl"; v_width=482; v_height=300;</script><script type="text/javascript" src="http://www.veemi.com/javascript/embedPlayer.js"></script>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="home">
+			<div class="sidebar">
+				<h3>Programas</h3>
+				<div>
+					<ul>
+						
+						<li class="last">
+							<p>
+								Pronto podrás ver nuestra progración.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<h3>Imagenes</h3>
+				<div>
+					<div>
+						<ul>
+							<li>
+								Sin Imagenes
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<div>
+				<a href="/" id="footer-logo"><%=image_tag 'TectvHD.png', width: "240px"%></a>
+			</div>
+			<div>
+				<h4>Ultimas entradas</h4>
+				<a href="/">Transmición online activa</a> <a href="/">Recuerden visitar nuestro facebook</a> <a href="/">Siguenos en Twitter</a>
+			</div>
+			<div class="connect">
+				<h4>Síguenos</h4>
+				<a href="https://www.facebook.com/Canal29lppn?fref=ts" id="facebook">facebook</a> <a href="https://twitter.com/TecTvAraucania" id="twitter">twitter</a> <a href="https://twitter.com/TecTvAraucania" id="googleplus">google+</a>
+				<p>
+					Copyright &#169; 2013 TecTV.cl <br> Todos los derechos reservados.
+				</p>
+			</div>
+		</div>
+	</div>
     <%= javascript_include_tag "application" %>
-  </body>
+</body>
 </html>
